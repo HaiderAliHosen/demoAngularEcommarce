@@ -23,9 +23,12 @@ let CREATED = false;
 @Injectable({
   providedIn: 'root'
 })
+//Turn on --strictNullChecks and --strictPropertyInitialization
+
 export class ProductsService {
   private productList: Product[];
-  products: ProductListResponseDto;
+
+  products= ProductListResponseDto[0];
   private readonly baseUrl: string;
 
   productsBehaviourSubject = new BehaviorSubject<ProductListResponseDto>(this.products);

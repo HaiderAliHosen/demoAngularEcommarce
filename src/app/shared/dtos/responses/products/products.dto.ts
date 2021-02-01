@@ -6,7 +6,7 @@ import {Product} from '../../../models/product';
 import {BaseAppDtoResponse} from '../shared/base.dto';
 
 export class ProductDto extends BaseAppDtoResponse {
-  // product: Product;
+   product: Product;
   // authInfo: AuthInfo;
 
   id: string;
